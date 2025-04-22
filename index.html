@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Produtos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="form-container">
+    <h1>Cadastro de Produtos</h1>
+    <form id="product-form">
+      <input type="text" id="nome" placeholder="Nome do produto" required />
+      <textarea id="descricao" placeholder="Descrição do produto" required></textarea>
+      <input type="number" id="valor" placeholder="Valor do produto" required />
+      <select id="disponivel">
+        <option value="sim">Disponível para venda</option>
+        <option value="nao">Não disponível</option>
+      </select>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+  <div class="container" id="list-container" style="display:none;">
+    <h1>Produtos Cadastrados</h1>
+    <table id="product-table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button onclick="showForm()">Cadastrar novo produto</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

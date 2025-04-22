@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #6a1b9a, #ab47bc);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: gradientShift 10s ease infinite;
+    background-size: 300% 300%;
+}
+  
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+  
+.container {
+    background: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+  
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #4a148c;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+input, textarea, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+  
+input:focus, textarea:focus, select:focus {
+    border-color: #9c27b0;
+    box-shadow: 0 0 5px rgba(156, 39, 176, 0.4);
+    outline: none;
+}
+  
+button {
+    background: linear-gradient(45deg, #7b1fa2, #9c27b0, #ba68c8);
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+  
+button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(45deg, #8e24aa, #ab47bc);
+}
+  
+table {
+    width: 100%;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+}
+  
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+button {
+    background-color: #4caf50; /* verde para editar */
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:nth-child(2) {
+    background-color: #f44336; /* vermelho para excluir */
+}
